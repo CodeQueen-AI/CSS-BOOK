@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glassmorphism & Neumorphism</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0e0e0, #f0f0f0);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    /* 🌫️ Glassmorphism Card */
+    .glass {
+      width: 300px;
+      height: 200px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      padding: 20px;
+    }
+
+    /* 🌑 Neumorphism Card */
+    .neumorph {
+      width: 300px;
+      height: 200px;
+      border-radius: 16px;
+      background: #e0e0e0;
+      box-shadow: 
+        8px 8px 16px #bebebe,
+        -8px -8px 16px #ffffff;
+      color: #333;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass">
+    <h2>🌫️ Glassmorphism</h2>
+    <p>Transparent + blurred background using <code>backdrop-filter</code>.</p>
+  </div>
+
+  <div class="neumorph">
+    <h2>🌑 Neumorphism</h2>
+    <p>Soft shadows create a 3D, inset-outset feel.</p>
+  </div>
+</body>
+</html>

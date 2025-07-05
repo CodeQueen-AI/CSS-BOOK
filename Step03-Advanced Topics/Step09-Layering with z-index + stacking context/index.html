@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Z-Index & Stacking Context</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f4f4f4;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 12px;
+    }
+
+    .red {
+      background: crimson;
+      top: 40px;
+      left: 40px;
+      z-index: 1;
+    }
+
+    .green {
+      background: seagreen;
+      top: 80px;
+      left: 80px;
+      z-index: 2;
+    }
+
+    .blue {
+      background: royalblue;
+      top: 120px;
+      left: 120px;
+      z-index: 3;
+    }
+
+    .stacking-context {
+      position: relative;
+      z-index: 5; /* creates new stacking context */
+      transform: scale(1); /* triggers new stacking context */
+    }
+
+    .child {
+      width: 100px;
+      height: 100px;
+      background: gold;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; /* relative to its stacking context */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box red">z-index: 1</div>
+  <div class="box green">z-index: 2</div>
+  <div class="box blue">z-index: 3</div>
+
+  <div class="box stacking-context" style="top: 160px; left: 160px; background: #555;">
+    Context
+    <div class="child">Child</div>
+  </div>
+
+</body>
+</html>

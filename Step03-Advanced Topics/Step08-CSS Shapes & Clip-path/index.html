@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Shapes & Clip-path</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      gap: 30px;
+      background: #f0f0f0;
+      font-family: sans-serif;
+      padding: 40px;
+    }
+
+    .shape {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, #009688, #4caf50);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .circle {
+      clip-path: circle(50%);
+    }
+
+    .triangle {
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .rhombus {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    .star {
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
+                          79% 91%, 50% 70%, 21% 91%, 32% 57%,
+                          2% 35%, 39% 35%);
+    }
+
+    .blob {
+      clip-path: path("M160,60Q140,120,90,100Q40,80,60,40Q80,0,130,20Q180,40,160,60Z");
+    }
+  </style>
+</head>
+<body>
+
+  <div class="shape circle">Circle</div>
+  <div class="shape triangle">Triangle</div>
+  <div class="shape rhombus">Rhombus</div>
+  <div class="shape star">Star</div>
+  <div class="shape blob">Blob</div>
+
+</body>
+</html>

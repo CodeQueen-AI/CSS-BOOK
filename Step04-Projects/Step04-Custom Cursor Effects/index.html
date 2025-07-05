@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Cursor (CSS Only)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #1f1f1f;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 👇 Replace with any custom image or SVG cursor */
+    .custom-cursor {
+      cursor: url('https://cdn-icons-png.flaticon.com/512/892/892692.png') 16 16, auto;
+      padding: 40px 80px;
+      background: #444;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+    }
+
+    .custom-cursor:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="custom-cursor">
+    Hover to see custom cursor!
+  </div>
+
+</body>
+</html>

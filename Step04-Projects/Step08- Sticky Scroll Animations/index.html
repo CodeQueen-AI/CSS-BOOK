@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Scroll Animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      height: 400vh; /* enough scroll space */
+      background: #111;
+      color: white;
+    }
+
+    .section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .sticky-text {
+      position: sticky;
+      top: 40%;
+      font-size: 3rem;
+      color: #00e676;
+      opacity: 0.2;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* When section enters viewport */
+    .section:nth-child(2):has(.sticky-text) .sticky-text {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    /* Scroll trigger using opacity + color change */
+    .section:nth-child(3) .sticky-text {
+      color: #ff6f00;
+    }
+
+    .section:nth-child(4) .sticky-text {
+      color: #2196f3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h1>Scroll Down 👇</h1>
+  </div>
+
+  <div class="section">
+    <div class="sticky-text">I Stick & Animate ✨</div>
+  </div>
+
+  <div class="section">
+    <div class="sticky-text">Colors Can Change 🌈</div>
+  </div>
+
+  <div class="section">
+    <div class="sticky-text">Final Sticky Message 🎉</div>
+  </div>
+
+</body>
+</html>

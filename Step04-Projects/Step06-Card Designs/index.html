@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Designs</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f2f2f2;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* 🌟 Common Card Style */
+    .card {
+      width: 250px;
+      height: 350px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* 🔁 Flip Card */
+    .flip-card {
+      width: 250px;
+      height: 350px;
+      perspective: 1000px;
+    }
+
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-front, .flip-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      backface-visibility: hidden;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .flip-front {
+      background: white;
+    }
+
+    .flip-back {
+      background: #009688;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧊 Basic Card with Shadow & Hover -->
+  <div class="card">
+    <img src="https://picsum.photos/id/1015/400/200" alt="Card Image">
+    <div class="card-content">
+      <h3>Mountain View</h3>
+      <p>Beautiful scenic view with peaceful vibes.</p>
+    </div>
+  </div>
+
+  <!-- 🔁 Flip Card -->
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="https://picsum.photos/id/1025/400/200" alt="Front">
+        <div class="card-content">
+          <h3>Doggo</h3>
+          <p>Click to flip and see the surprise!</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        🐶 You're Pawsome!
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

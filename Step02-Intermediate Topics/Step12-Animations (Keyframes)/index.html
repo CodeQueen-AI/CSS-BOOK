@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .animate-box {
+      width: 100px;
+      height: 100px;
+      background-color: deeppink;
+      position: relative;
+      animation: moveFade 3s ease-in-out infinite;
+    }
+
+    @keyframes moveFade {
+      0% {
+        left: 0;
+        opacity: 0.2;
+      }
+      50% {
+        left: 200px;
+        opacity: 1;
+      }
+      100% {
+        left: 0;
+        opacity: 0.2;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="animate-box"></div>
+
+</body>
+</html>

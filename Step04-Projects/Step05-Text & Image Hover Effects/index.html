@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text & Image Hover Effects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 🔤 Text Hover Effect */
+    .hover-text {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .hover-text::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 3px;
+      background: #009688;
+      transition: width 0.3s;
+    }
+
+    .hover-text:hover {
+      color: #009688;
+    }
+
+    .hover-text:hover::after {
+      width: 100%;
+    }
+
+    /* 🖼️ Image Hover Zoom + Overlay */
+    .image-card {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .image-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 150, 136, 0.5);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      transition: opacity 0.4s ease;
+    }
+
+    .image-card:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hover-text">Hover Over This Text</div>
+
+  <div class="image-card">
+    <img src="https://picsum.photos/id/1011/600/400" alt="Nature">
+    <div class="overlay">Hello World!</div>
+  </div>
+
+</body>
+</html>
