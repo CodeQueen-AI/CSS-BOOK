@@ -1,10 +1,9 @@
-# ✍️ CSS Text Formatting Guide
+# ✍️ CSS Text Formatting 
 
 Text formatting in CSS helps make your website content more **readable, stylish, and user-friendly**.
 
 > 💬 Urdu: Text formatting ka matlab hai text ko sundar aur readable banana — jaise center karna, underline lagana, capital letters banana ya space adjust karna.
 
----
 
 ## 🔹 1. `text-align` — Text Positioning
 
@@ -15,9 +14,9 @@ Text formatting in CSS helps make your website content more **readable, stylish,
 | `right`   | Aligns text to the right      | Text ko right side mein rakhta hai |
 | `justify` | Adjusts text to fill width    | Text dono side se barabar karta hai |
 
-✅ **Use:** Paragraphs, headings, center align content for design.
+✅ **Use:** Paragraphs, headings, center align content for design
 
----
+
 
 ## 🔹 2. `text-decoration` — Lines Around Text
 
@@ -28,9 +27,9 @@ Text formatting in CSS helps make your website content more **readable, stylish,
 | `overline`       | Adds line above text     | Text ke upar line lagti hai         |
 | `none`           | No decoration            | Koi line nahi hoti (default)        |
 
-✅ **Use:** Links, emphasis, and styling effects.
+✅ **Use:** Links, emphasis, and styling effects
 
----
+
 
 ## 🔹 3. `text-transform` — Letter Style
 
@@ -40,20 +39,20 @@ Text formatting in CSS helps make your website content more **readable, stylish,
 | `lowercase`  | Converts all to small    | Sab letters small ho jate hain       |
 | `capitalize` | First letter of each word is capital | Har lafz ka pehla letter bara ho jata hai |
 
-✅ **Use:** Button text, titles, headings, names.
+✅ **Use:** Button text, titles, headings, names
 
----
 
 ## 🔹 4. `letter-spacing` — Space Between Letters
 
 - Increases or decreases space between **individual letters**.
 - Value in `px`, `em`, etc. (e.g., `letter-spacing: 3px`)
 
-💬 **Urdu:** Har harf ke darmiyan faasla badhata ya kam karta hai.
+💬 **Urdu:** Har harf ke darmiyan faasla badhata ya kam karta hai
 
-✅ **Use:** Stylish headings, clear typography.
+✅ **Use:** Stylish headings, clear typography
 
----
+
+
 
 ## 🔹 5. `word-spacing` — Space Between Words
 
@@ -62,13 +61,14 @@ Text formatting in CSS helps make your website content more **readable, stylish,
 
 💬 **Urdu:** Alfaaz ke darmiyan zyada ya kam space deta hai.
 
-✅ **Use:** Banner text, clean spacing in sentences.
+✅ **Use:** Banner text, clean spacing in sentences
 
----
 
-## 📌 Summary Table (English + Urdu)
 
-| Property         | What It Controls       | Urdu Description                   |
+
+## 📌 Summary Table 
+
+| Property         | What It Controls       |     Description                   |
 |------------------|------------------------|------------------------------------|
 | `text-align`     | Text ka rukh (position)| Left, center, right, justify karta hai |
 | `text-decoration`| Lines under/through    | Underline, line-through, etc. lagata hai |
@@ -76,15 +76,5 @@ Text formatting in CSS helps make your website content more **readable, stylish,
 | `letter-spacing` | Space between letters  | Harf ke darmiyan faasla               |
 | `word-spacing`   | Space between words    | Alfaaz ke darmiyan faasla             |
 
----
 
-## 👑 Final Tip
 
-Text formatting se aap apne page ko:
-
-- **Sundar (stylish)**
-- **Asaan to read**
-- **Professional look wali** bana sakti hain!
-
-Apne har paragraph, heading ya button ko text formatting ke zariye perfect bana lijiye.  
-Keep formatting like a true **Code Queen!** 👸✨
