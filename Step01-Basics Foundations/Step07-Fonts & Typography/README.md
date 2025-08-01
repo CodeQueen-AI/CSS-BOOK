@@ -4,7 +4,7 @@ Typography is the art of displaying text in a readable and beautiful way using f
 
 > 💬 Urdu: Typography ka matlab hai text ko is tarah dikhana ke woh **achha, readable, aur stylish** lage.
 
----
+
 
 ## 🔹 1. Font Family
 Defines which font to use.
