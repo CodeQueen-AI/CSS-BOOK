@@ -83,11 +83,11 @@ Controls **text alignment**.
 | `center` | Align center  |
 | `justify`| Adjust width  |
 
----
 
-## ✅ Urdu Summary Table
 
-| Property         | Urdu Meaning                         |
+## ✅ Summary Table
+
+| Property         |      Meaning                         |
 |------------------|--------------------------------------|
 | `font-family`    | Font ka style (Arial, Times, etc.)   |
 | `font-size`      | Text ka size                         |
@@ -98,7 +98,3 @@ Controls **text alignment**.
 | `text-transform` | Uppercase/lowercase/capitalization   |
 | `text-align`     | Text left, center ya right mein lana |
 
----
-
-Typography is key to making your content **easy to read and look professional**.  
-Use fonts wisely, and you'll rule the web like a true **Code Queen**! 👑💬
