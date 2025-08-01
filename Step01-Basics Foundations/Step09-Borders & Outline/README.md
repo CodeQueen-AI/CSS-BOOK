@@ -2,13 +2,13 @@
 
 Borders and outlines are used to **visually highlight** elements like boxes, buttons, images, or text containers.
 
-> 💬 Urdu: CSS mein borders aur outline ka use hota hai kisi element ko **highlight** ya **design** karne ke liye — jaise ke box ke ird gird line banana.
+> 💬 Urdu: CSS mein borders aur outline ka use hota hai kisi element ko **highlight** ya **design** karne ke liye — jaise ke box ke ird gird line banana
 
----
+
 
 ## 🔹 What is `border`?
 
-The `border` is a line drawn **around the edge** of an element.
+The `border` is a line drawn **around the edge** of an element
 
 ### ✨ Syntax:
 `border: width style color;`
@@ -20,18 +20,18 @@ The `border` is a line drawn **around the edge** of an element.
 - `double` → double line  
 
 ### 💬 Urdu:
-**Border** element ke bilkul edge par line hoti hai — iska rang, style aur width set kiya ja sakta hai.
+**Border** element ke bilkul edge par line hoti hai — iska rang, style aur width set kiya ja sakta hai
 
----
+
 
 ## 🔸 `border-radius` – Rounded Corners
 
 - Makes the corners **curved** instead of sharp.
 - Example: `border-radius: 10px;`
 
-💬 Urdu: Ye border ke kone gol banata hai.
+💬 Urdu: Ye border ke kone gol banata hai
 
----
+
 
 ## 🔹 What is `outline`?
 
@@ -41,7 +41,7 @@ The `border` is a line drawn **around the edge** of an element.
 
 💬 Urdu: Outline bhi ek line hoti hai jo element ke bahar hoti hai (border ke baad) — mostly focus ya hover pe use hoti hai.
 
----
+
 
 ## 🔸 `outline-offset`
 
@@ -50,18 +50,18 @@ The `border` is a line drawn **around the edge** of an element.
 
 💬 Urdu: Outline aur border ke darmiyan gap deta hai.
 
----
+
 
 ## 🧾 Summary Table
 
-| Property          | Description (English)                     | Urdu Meaning                         |
+| Property          | Description                                |    Meaning                         |
 |-------------------|--------------------------------------------|--------------------------------------|
 | `border`          | Line around element                       | Element ke gird line                 |
 | `border-radius`   | Rounds the corners                        | Konon ko gol banata hai              |
 | `outline`         | Extra line outside border                 | Border ke bahar wali line            |
 | `outline-offset`  | Gap between border and outline            | Outline aur border ke darmiyan faasla |
 
----
+
 
 ## 💡 Use Cases
 
@@ -72,7 +72,3 @@ The `border` is a line drawn **around the edge** of an element.
 | `border-radius`           | To make UI soft and modern      |
 | `outline-offset`          | To separate outline visually    |
 
----
-
-Borders and outlines make your elements **stand out** — use them for buttons, cards, forms, images, etc.  
-Design smartly like a true **Code Queen!** 👑💡
