@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning</title>
+  <style>
+    .static { position: static; background: lightblue; }
+    .relative { position: relative; top: 10px; left: 10px; background: lightgreen; }
+    .absolute { position: absolute; top: 50px; left: 50px; background: lightcoral; }
+    .fixed { position: fixed; bottom: 10px; right: 10px; background: lightpink; }
+    .sticky { position: sticky; top: 0; background: lightyellow; }
+    .z1 { position: relative; z-index: 1; background: lightgray; }
+    .z2 { position: relative; z-index: 2; background: lightgoldenrodyellow; }
+  </style>
+</head>
+<body>
+  <div class="static">Static</div>
+  <div class="relative">Relative</div>
+  <div class="absolute">Absolute</div>
+  <div class="fixed">Fixed</div>
+  <div class="sticky">Sticky (scroll down)</div>
+  <div class="z1">Z-index 1</div>
+  <div class="z2">Z-index 2 (above)</div>
+  <div style="height:300px;"></div> <!-- for scroll to see sticky -->
+</body>
+</html>

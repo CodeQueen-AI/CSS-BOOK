@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Property in CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      margin-bottom: 20px;
+    }
+
+    .box {
+      padding: 10px;
+      margin: 5px;
+      background-color: #90caf9;
+      color: black;
+      border: 1px solid #1976d2;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .inline {
+      display: inline;
+    }
+
+    .inline-block {
+      display: inline-block;
+      width: 120px;
+    }
+
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Display Property Examples</h2>
+
+  <div class="container">
+    <p><strong>Block:</strong></p>
+    <div class="box block">Block 1</div>
+    <div class="box block">Block 2</div>
+  </div>
+
+  <div class="container">
+    <p><strong>Inline:</strong></p>
+    <span class="box inline">Inline 1</span>
+    <span class="box inline">Inline 2</span>
+  </div>
+
+  <div class="container">
+    <p><strong>Inline-Block:</strong></p>
+    <span class="box inline-block">Inline-Block 1</span>
+    <span class="box inline-block">Inline-Block 2</span>
+  </div>
+
+  <div class="container">
+    <p><strong>None (Hidden Element):</strong></p>
+    <div class="box none">You can't see me! 👻</div>
+    <div class="box">Visible Box</div>
+  </div>
+
+</body>
+</html>

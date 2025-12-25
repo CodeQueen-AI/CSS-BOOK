@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* Universal Selector */
+    * {
+      font-family: Arial, sans-serif;
+    }
+    /* Element Selector */
+    h1 {
+      color: blue;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+      padding: 10px;
+    }
+
+    /* ID Selector */
+    #main-title {
+      text-align: center;
+      color: darkgreen;
+    }
+
+    /* Group Selector */
+    h2, p {
+      margin: 10px;
+    }
+
+    /* Descendant Selector */
+    div p {
+      color: purple;
+    }
+
+    /* Child Selector */
+    div > span {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Attribute Selector */
+    input[type="text"] {
+      border: 2px solid blue;
+    }
+
+    /* Pseudo-class Selector */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Pseudo-element Selector */
+    p::first-line {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">CSS Selectors Demo</h1>
+  <h2>Subheading</h2>
+
+  <p class="highlight">This is a highlighted paragraph using class selector.</p>
+
+  <div>
+    <p>This paragraph is inside a div (descendant selector).</p>
+    <span>This is a span directly inside div (child selector).</span>
+  </div>
+
+  <input type="text" placeholder="Text input with border" />
+
+  <br><br>
+  <a href="#">Hover over this link</a>
+
+</body>
+</html>

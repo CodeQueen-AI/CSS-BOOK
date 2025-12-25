@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Units Example</title>
+  <style>
+    .box-px {
+      width: 200px;       /* pixels */
+      height: 100px;
+      background-color: lightblue;
+      margin-bottom: 20px;
+    }
+
+    .box-percent {
+      width: 50%;         /* percentage of parent */
+      height: 100px;
+      background-color: lightgreen;
+      margin-bottom: 20px;
+    }
+
+    .box-em {
+      width: 20em;        /* relative to font-size of element */
+      height: 5em;
+      background-color: lightcoral;
+      margin-bottom: 20px;
+    }
+
+    .box-rem {
+      width: 20rem;       /* relative to font-size of root */
+      height: 5rem;
+      background-color: lightgoldenrodyellow;
+      margin-bottom: 20px;
+    }
+
+    .box-vw {
+      width: 50vw;        /* 50% of viewport width */
+      height: 20vh;       /* 20% of viewport height */
+      background-color: lightpink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-px">Width: 200px</div>
+  <div class="box-percent">Width: 50%</div>
+  <div class="box-em">Width: 20em</div>
+  <div class="box-rem">Width: 20rem</div>
+  <div class="box-vw">Width: 50vw, Height: 20vh</div>
+</body>
+</html>
